@@ -1,0 +1,7 @@
+RewriteRule  ^fonts/*.*  - [L]
+RewriteRule  ^css/*.*  - [L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(js|ico|gif|jpg|jpeg|png|css|swf|doc|docx|xlsx|pdf|PDF|txt|xls)$ index.php
